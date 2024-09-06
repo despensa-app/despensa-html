@@ -1,0 +1,77 @@
+<!-- Pagina agregar producto a la lista - Ventana modal -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Blank Page</title>
+    
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet"
+          href="../assets/admin-lte/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet"
+          href="../assets/admin-lte/dist/css/adminlte.min.css">
+  </head>
+  
+  <body class="">
+    <div class="modal fade show"
+         id="exampleModal"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+         style="display: block">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"
+                id="exampleModalLabel">Producto numero 1</h5>
+            <button type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="modal-body p-0">
+            <form class="p-3">
+              <div class="d-flex">
+                <div>
+                  <label for="units">Unidades</label>
+                  <input type="number"
+                         class="form-control"
+                         name="units"
+                         id="units"
+                         value="1">
+                </div>
+                <div class="flex-grow-1">
+                  <!-- NOTA: al pulsar se mostrara una página igual a add-product-shopping-list.html, donde se seleccionara el tipo de unidad. TODO: aun por ver -->
+                  <label for="unit_type_name">Tipo de unidades</label>
+                  <input type="text"
+                         class="form-control"
+                         name="unit_type_name"
+                         id="unit_type_name"
+                         value="lata"
+                         disabled>
+                </div>
+              </div>
+              <button type="submit"
+                      class="btn btn-success btn-block mt-3">
+                <i class="fas fa-plus"></i>
+                Agregar
+              </button>
+            </form>
+            <img src="https://placehold.co/1080x1080/00ccaa/FFF?text=5bcbe1e7e436244ecafa3faa18fb5c82.webp"
+                 alt="image-product"
+                 class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="../assets/admin-lte/plugins/jquery/jquery.min.js"></script>
+    <script src="../assets/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/admin-lte/dist/js/adminlte.min.js"></script>
+  </body>
+</html>
