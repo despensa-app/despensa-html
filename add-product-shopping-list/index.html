@@ -1,22 +1,26 @@
 <!-- Página agregar producto a la lista - Completa -->
 <!DOCTYPE html>
-<html lang="en"
-      xmlns="http://www.w3.org/1999/html">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
     <title>AdminLTE 3 | Blank Page</title>
     
+    <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
     <link rel="stylesheet"
           href="../assets/admin-lte/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
     <link rel="stylesheet"
           href="../assets/admin-lte/dist/css/adminlte.min.css">
   </head>
-  <body class="layout-fixed sidebar-collapse">
+  <body class="layout-fixed hold-transition sidebar-collapse">
+    <!-- Site wrapper -->
     <div class="wrapper">
+      <!-- Navbar -->
       <nav
         class="main-header navbar navbar-expand fixed-bottom navbar-white navbar-light d-flex justify-content-between border-top border-bottom-0">
         <ul class="navbar-nav">
@@ -46,6 +50,9 @@
           </li>
         </ul>
       </nav>
+      <!-- /.navbar -->
+      
+      <!-- Main Sidebar Container -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <a href="#"
            class="brand-link">
@@ -63,31 +70,19 @@
                 role="menu"
                 data-accordion="false">
               <li class="nav-item">
-                <a href="#"
+                <a href="../index.html"
                    class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#"
-                   class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#"
-                   class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
+                  <p>Index</p>
                 </a>
               </li>
             </ul>
           </nav>
         </div>
       </aside>
+      <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
         <section class="content-header">
           <div class="container-fluid">
             <div class="d-flex justify-content-between">
@@ -101,9 +96,12 @@
                 </button>
               </div>
             </div>
-          </div>
+          </div><!-- /.container-fluid -->
         </section>
+        
+        <!-- Main content -->
         <section class="content">
+          
           <div class="container-fluid">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -139,8 +137,12 @@
               Cargar más
             </button>
           </div>
+        
         </section>
+        <!-- /.content -->
       </div>
+      <!-- /.content-wrapper -->
+      
       <div class="modal fade"
            id="exampleModal"
            tabindex="-1"
@@ -193,10 +195,15 @@
           </div>
         </div>
       </div>
-    </div>
     
+    </div>
+    <!-- ./wrapper -->
+    
+    <!-- jQuery -->
     <script src="../assets/admin-lte/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
     <script src="../assets/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
     <script src="../assets/admin-lte/dist/js/adminlte.min.js"></script>
   </body>
 </html>
