@@ -59,15 +59,22 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <div class="container-fluid">
-            <form class="mt-2">
-              <label class="sr-only"
-                     for="name">Nombre</label>
-              <input class="form-control"
-                     type="text"
-                     value="Lista numero 1"
-                     id="name"
-                     name="name"/>
-            </form>
+            <div class="d-flex justify-content-between mb-2">
+              <form class="flex-grow-1 mr-1">
+                <label class="sr-only"
+                       for="name">Nombre</label>
+                <input class="form-control"
+                       type="text"
+                       value="Lista numero 1"
+                       id="name"
+                       name="name"/>
+              </form>
+              <button class="btn btn-primary"
+                      type="button">
+                <i class="fas fa-save w-25px"></i>
+                Guardar
+              </button>
+            </div>
           </div><!-- /.container-fluid -->
         </section>
         
@@ -75,6 +82,12 @@
         <section class="content">
           
           <div class="container-fluid">
+            <button class="btn btn-success btn-block mb-4"
+                    type="button">
+              <i class="fas fa-plus w-25px"></i>
+              Agregar producto
+            </button>
+            
             <div class="list-group">
               <div class="list-group-item">
                 <div class="d-flex justify-content-between">
