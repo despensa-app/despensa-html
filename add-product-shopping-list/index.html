@@ -20,69 +20,40 @@
     <link rel="stylesheet"
           href="../assets/custom.css">
   </head>
-  <body class="layout-fixed hold-transition sidebar-collapse">
+  <body class="layout-top-nav hold-transition">
     <!-- Site wrapper -->
     <div class="wrapper">
       <!-- Navbar -->
       <nav
-        class="main-header navbar navbar-expand fixed-bottom navbar-white navbar-light d-flex justify-content-between border-top border-bottom-0">
-        <ul class="navbar-nav">
+        class="main-header fixed-bottom navbar-white navbar-light border-top border-bottom-0">
+        <ul class="navbar-nav d-flex flex-row justify-content-around">
           <li class="nav-item">
-            <button class="btn"
-                    data-widget="pushmenu"
-                    type="button">
+            <a href="../index.html"
+               class="btn">
+              <i class="fas fa-home"></i>
+              <span class="d-block">Inicio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <button type="button"
+                    data-target="#actions-modal"
+                    data-toggle="modal"
+                    class="btn">
               <i class="fas fa-bars"></i>
+              <span class="d-block">Acciones</span>
             </button>
           </li>
-        </ul>
-        <ul class="navbar-nav">
           <li class="nav-item">
-            <button class="btn btn-success"
-                    type="button">
-              <i class="fas fa-save"></i>
-              <span>Terminar</span>
-            </button>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <button class="btn"
-                    type="button">
-              <i class="fas fa-search"></i>
-            </button>
+            <a href="../login/index.html"
+               class="btn">
+              <i class="fas fa-user"></i>
+              <span class="d-block">Iniciar sesión</span>
+            </a>
           </li>
         </ul>
       </nav>
       <!-- /.navbar -->
       
-      <!-- Main Sidebar Container -->
-      <aside class="main-sidebar sidebar-dark-primary elevation-4">
-        <a href="#"
-           class="brand-link">
-          <img src="../assets/AdminLTELogo.png"
-               alt="AdminLTE Logo"
-               class="brand-image img-circle elevation-3"
-               style="opacity: .8">
-          <span class="brand-text font-weight-light">Despensa app</span>
-        </a>
-        
-        <div class="sidebar">
-          <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column"
-                data-widget="treeview"
-                role="menu"
-                data-accordion="false">
-              <li class="nav-item">
-                <a href="../index.html"
-                   class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Index</p>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </aside>
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -93,10 +64,11 @@
                 <h1>Seleccionar productos</h1>
               </div>
               <div>
-                <button class="btn"
-                        type="button">
-                  <i class="fas fa-filter"></i>
-                </button>
+                <a class="btn btn-success"
+                   href="../shopping-list/index-edit.html">
+                  <i class="fas fa-save w-25px"></i>
+                  Terminar
+                </a>
               </div>
             </div>
           </div><!-- /.container-fluid -->
@@ -166,7 +138,7 @@
             <div class="modal-body p-0">
               <form class="p-3">
                 <div class="d-flex">
-                  <div>
+                  <div class="mr-1">
                     <label for="units">Unidades</label>
                     <input type="number"
                            class="form-control"
@@ -198,6 +170,101 @@
           </div>
         </div>
       </div>
+      
+      <!-- actions-modal -->
+      <div class="modal fade"
+           id="actions-modal"
+           tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content rounded-0">
+            <div class="modal-header">
+              <h5 class="modal-title">Acciones</h5>
+              <button type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body p-0">
+              <ul class="nav nav-tabs"
+                  role="tablist">
+                <li class="nav-item"
+                    role="presentation">
+                  <a class="nav-link active rounded-0 border-top-0 border-left-0"
+                     id="filter-action-modal-tab"
+                     data-toggle="tab"
+                     href="#filter-action-modal"
+                     role="tab"
+                     aria-controls="filter-action-modal"
+                     aria-selected="true">
+                    <i class="fas fa-filter"></i>
+                    Filtrar
+                  </a>
+                </li>
+                <li class="nav-item"
+                    role="presentation">
+                  <a class="nav-link border-top-0 rounded-0"
+                     id="sort-action-modal-tab"
+                     data-toggle="tab"
+                     href="#sort-action-modal"
+                     role="tab"
+                     aria-controls="sort-action-modal"
+                     aria-selected="false">
+                    <i class="fas fa-sort"></i>
+                    Ordenar
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade show active"
+                     id="filter-action-modal"
+                     role="tabpanel"
+                     aria-labelledby="filter-action-modal-tab">
+                  <div class="list-group list-group-flush">
+                    <button type="button"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                      <i class="fas fa-calendar-alt w-25px"></i>
+                      <span class="flex-grow-1">Precio</span>
+                      <i class="fas fa-angle-right"></i>
+                    </button>
+                    <button type="button"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                      <i class="fas fa-tags w-25px"></i>
+                      <span class="flex-grow-1">Categoría</span>
+                      <i class="fas fa-angle-right"></i>
+                    </button>
+                    <button type="button"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                      <i class="fas fa-star w-25px"></i>
+                      <span class="flex-grow-1">Favoritos</span>
+                      <i class="fas fa-angle-right"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane fade"
+                     id="sort-action-modal"
+                     role="tabpanel"
+                     aria-labelledby="sort-action-modal-tab">
+                  <div class="list-group list-group-flush">
+                    <button type="button"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                      Título
+                      <i class="fas fa-long-arrow-alt-down"></i>
+                    </button>
+                    <button type="button"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                      Precio
+                      <i class="fas fa-long-arrow-alt-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.actions-modal -->
     
     </div>
     <!-- ./wrapper -->
