@@ -131,6 +131,8 @@
                         <span>Ver</span>
                       </button>
                       <button class="dropdown-item"
+                              data-toggle="modal"
+                              data-target="#product-edit-modal"
                               type="button">
                         <i class="fas fa-edit w-25px"></i>
                         <span>Editar</span>
@@ -171,6 +173,8 @@
                         <span>Ver</span>
                       </button>
                       <button class="dropdown-item"
+                              data-toggle="modal"
+                              data-target="#product-info-modal"
                               type="button">
                         <i class="fas fa-edit w-25px"></i>
                         <span>Editar</span>
@@ -340,16 +344,39 @@
               </button>
             </div>
             <div class="modal-body p-0">
-              <div class="d-flex p-3 border-bottom">
-                <div class="flex-grow-1">
+              <div class="d-flex py-3 pl-3 align-items-center">
+                <div class="mr-3">
                   999.99 € <small class="text-muted">9.9 €</small>
                 </div>
-                <div class="flex-grow-1">
+                <div class="mr-3">
                   99 <small class="text-muted">Unidades</small>
                 </div>
-                <div>
+                <div class="flex-grow-1">
                   <span class="badge badge-info">2 Latas</span>
                   <span class="badge badge-primary">Frutas</span>
+                </div>
+                <div class="dropdown">
+                  <button type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                          class="btn text-body">
+                    <i class="fas fa-ellipsis-v w-25px"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item"
+                            data-dismiss="modal"
+                            data-toggle="modal"
+                            data-target="#product-edit-modal"
+                            type="button">
+                      <i class="fas fa-edit w-25px"></i>
+                      <span>Editar</span>
+                    </button>
+                    <button type="button"
+                            class="dropdown-item">
+                      <i class="fas fa-trash w-25px"></i>
+                      <span>Eliminar</span>
+                    </button>
+                  </div>
                 </div>
               </div>
               <img src="https://placehold.co/1080x1080/0000ee/FFF?text=0348431af5cdc4c893a63f5d90fd219b.webp"
@@ -360,6 +387,61 @@
         </div>
       </div>
       <!-- /.product-info-modal -->
+      
+      <!-- product-edit-modal -->
+      <div class="modal fade"
+           id="product-edit-modal"
+           tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Producto numero 1Producto numero 1Producto numero 1Producto numero 1</h5>
+              <button type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body p-0">
+              <form class="p-3">
+                <div class="d-flex">
+                  <div class="mr-1">
+                    <label for="units">Unidades</label>
+                    <input type="number"
+                           class="form-control"
+                           name="units"
+                           id="units"
+                           value="99">
+                  </div>
+                  <div class="flex-grow-1">
+                    <!-- NOTA: al pulsar se mostrara una página igual a add-product-shopping-list.html, donde se seleccionara el tipo de unidad. TODO: aun por ver -->
+                    <label for="unit_type_name">Tipo de unidades</label>
+                    <input type="text"
+                           class="form-control"
+                           name="unit_type_name"
+                           id="unit_type_name"
+                           value="lata"
+                           disabled>
+                  </div>
+                </div>
+                <button type="button"
+                        data-dismiss="modal"
+                        data-toggle="modal"
+                        data-target="#product-info-modal"
+                        class="btn btn-success btn-block mt-3">
+                  <i class="fas fa-save w-25px"></i>
+                  Guardar
+                </button>
+              </form>
+              <img src="https://placehold.co/1080x1080/0000ee/FFF?text=0348431af5cdc4c893a63f5d90fd219b.webp"
+                   alt="image-product"
+                   class="img-fluid img-rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.product-edit-modal -->
     
     </div>
     <!-- ./wrapper -->
