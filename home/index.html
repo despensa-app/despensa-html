@@ -75,13 +75,13 @@
             </div>
             <div class="d-flex justify-content-between">
               <div>
-                <h1>Listas</h1>
+                <h1>Listas <small>de la compra</small></h1>
               </div>
               <div>
                 <a class="btn btn-success"
                    href="../shopping-list/index.html">
                   <i class="fas fa-plus w-25px"></i>
-                  Nuevo
+                  Nueva lista
                 </a>
               </div>
             </div>
@@ -93,37 +93,95 @@
           
           <div class="container">
             <div class="card card-primary card-outline">
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <div class="flex-grow-1">
-                    <h3 class="card-title">Lista numero 1</h3>
-                    <br/>
-                    <span class="text-muted">31 Productos</span>
-                    <br/>
-                    <small class="text-muted">18/08/2021</small>
-                  </div>
-                  <a class="btn stretched-link"
-                     href="../shopping-list/index.html">
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="card-header border-bottom-0 flex-grow-1 pt-4">
+                  <h3 class="card-title">
+                    <a href="../shopping-list/index.html"
+                       class="text-body stretched-link">
+                      Lista numero 1
+                    </a>
+                  </h3>
                 </div>
+                <div class="dropdown">
+                  <button type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                          class="btn text-body pt-4 px-4">
+                    <i class="fas fa-ellipsis-v w-25px"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item"
+                       href="#">
+                      <i class="far fa-star w-25px"></i>
+                      <span>Favorito</span>
+                    </a>
+                    <a class="dropdown-item"
+                       href="#">
+                      <i class="fas fa-edit w-25px"></i>
+                      <span>Editar</span>
+                    </a>
+                    <button type="button"
+                            class="dropdown-item"
+                            href="#">
+                      <i class="fas fa-trash w-25px"></i>
+                      <span>Eliminar</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body position-relative pt-0">
+                <span class="text-muted d-block">31 Productos</span>
+                <small class="text-muted d-block">18/08/2021</small>
+                <a class="stretched-link"
+                   href="../shopping-list/index.html">
+                  <span class="d-none">Ver detalles</span>
+                </a>
               </div>
             </div>
             <div class="card card-primary card-outline">
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <div class="flex-grow-1">
-                    <h3 class="card-title">Lista numero 1</h3>
-                    <br/>
-                    <span class="text-muted">31 Productos</span>
-                    <br/>
-                    <small class="text-muted">18/08/2021</small>
-                  </div>
-                  <a class="btn stretched-link"
-                     href="../shopping-list/index.html">
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="card-header border-bottom-0 flex-grow-1 pt-4">
+                  <h3 class="card-title">
+                    <a href="../shopping-list/index.html"
+                       class="text-body stretched-link">
+                      Lista numero 1
+                    </a>
+                  </h3>
                 </div>
+                <div class="dropdown">
+                  <button type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                          class="btn text-body pt-4 px-4">
+                    <i class="fas fa-ellipsis-v w-25px"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item"
+                       href="#">
+                      <i class="far fa-star w-25px"></i>
+                      <span>Favorito</span>
+                    </a>
+                    <a class="dropdown-item"
+                       href="#">
+                      <i class="fas fa-edit w-25px"></i>
+                      <span>Editar</span>
+                    </a>
+                    <button type="button"
+                            class="dropdown-item"
+                            href="#">
+                      <i class="fas fa-trash w-25px"></i>
+                      <span>Eliminar</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body position-relative pt-0">
+                <span class="text-muted d-block">31 Productos</span>
+                <small class="text-muted d-block">18/08/2021</small>
+                <a class="stretched-link"
+                   href="../shopping-list/index.html">
+                  <span class="d-none">Ver detalles</span>
+                </a>
               </div>
             </div>
           </div>
