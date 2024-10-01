@@ -13,8 +13,6 @@
 
 # Despensa-app - REST API
 
----
-
 ## Descripción
 
 Este repositorio es usado para maquetar en HTML el diseño del [proyecto web][github-project-web-url]
@@ -28,6 +26,19 @@ Este repositorio es usado para maquetar en HTML el diseño del [proyecto web][gi
 * [Bootstrap v4][getbootstrap-v4-url]
 
 ### Empezar a trabajar
+
+> Usa la [página en blanco index.html](index.html) como base para las nuevas páginas.
+
+Las páginas actuales están separadas en las siguientes carpetas:
+
+* [shopping-list](shopping-list)
+* [register](register)
+* [login](login)
+* [home](home)
+* [add-product-shopping-list](add-product-shopping-list)
+
+> Los diferentes archivos HTML representan diferentes estados que puede tener la página (para los casos donde no se
+> puede representar en una sola página).
 
 <a name="working-webstorm"></a>
 **Trabajando en WebStorm**
