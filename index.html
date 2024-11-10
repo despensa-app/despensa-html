@@ -145,6 +145,40 @@
                 </a>
               </li>
             </ul>
+            <h4>Mensajes de alerta</h4>
+            <button type="button"
+                    id="example-info-toast-btn"
+                    class="btn btn-info">
+              Información
+            </button>
+            <button type="button"
+                    id="example-success-toast-btn"
+                    class="btn btn-success">
+              Éxito
+            </button>
+            <button type="button"
+                    id="example-warning-toast-btn"
+                    class="btn btn-warning">
+              Alerta
+            </button>
+            <button type="button"
+                    id="example-danger-toast-btn"
+                    class="btn btn-danger">
+              Error
+            </button>
+            <h4>Modals</h4>
+            <button type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#normal-modal">
+              Normal modal
+            </button>
+            <button type="button"
+                    class="btn btn-secondary"
+                    data-toggle="modal"
+                    data-target="#alternative-modal">
+              Alternative modal
+            </button>
           </div>
           <!-- /.card -->
         
@@ -152,6 +186,83 @@
         <!-- /.content -->
       </div>
       <!-- /.content-wrapper -->
+      
+      <!-- messages -->
+      <div class="fixed-top mt-3">
+        <div class="content">
+          <div class="container">
+            <div id="example-info-toast"
+                 class="toast hide bg-info"
+                 style="max-width: 100%;"
+                 role="alert"
+                 aria-live="assertive"
+                 aria-atomic="true"
+                 data-delay="5000">
+              <div class="d-flex align-items-center">
+                <div class="text-lg pl-3">
+                  <i class="fas fa-info"></i>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                  Hello, world! This is a toast message.
+                  Hello, world! This is a toast message.
+                  Hello, world! This is a toast message.
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+            </div>
+            <div id="example-success-toast"
+                 class="toast hide bg-success"
+                 style="max-width: 100%;"
+                 role="alert"
+                 aria-live="assertive"
+                 aria-atomic="true"
+                 data-delay="5000">
+              <div class="d-flex align-items-center">
+                <div class="text-lg pl-3">
+                  <i class="fas fa-check"></i>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+            </div>
+            <div id="example-warning-toast"
+                 class="toast hide bg-warning"
+                 style="max-width: 100%;"
+                 role="alert"
+                 aria-live="assertive"
+                 aria-atomic="true"
+                 data-delay="5000">
+              <div class="d-flex align-items-center">
+                <div class="text-lg pl-3">
+                  <i class="fas fa-exclamation"></i>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+            </div>
+            <div id="example-danger-toast"
+                 class="toast hide bg-danger"
+                 style="max-width: 100%;"
+                 role="alert"
+                 aria-live="assertive"
+                 aria-atomic="true"
+                 data-delay="5000">
+              <div class="d-flex align-items-center">
+                <div class="text-lg pl-3">
+                  <i class="fas fa-times"></i>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.messages -->
       
       <!-- actions-modal -->
       <div class="modal fade"
@@ -256,5 +367,22 @@
     <script src="assets/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="assets/admin-lte/dist/js/adminlte.min.js"></script>
+    
+    <script>
+      $(function () {
+        $("#example-info-toast-btn").click(function () {
+          $("#example-info-toast").toast("show")
+        });
+        $("#example-success-toast-btn").click(function () {
+          $("#example-success-toast").toast("show")
+        });
+        $("#example-warning-toast-btn").click(function () {
+          $("#example-warning-toast").toast("show")
+        });
+        $("#example-danger-toast-btn").click(function () {
+          $("#example-danger-toast").toast("show")
+        });
+      });
+    </script>
   </body>
 </html>
