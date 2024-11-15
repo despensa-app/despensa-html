@@ -166,6 +166,19 @@
                     class="btn btn-danger">
               Error
             </button>
+            <h4>Mensajes de confirmación</h4>
+            <button type="button"
+                    data-target="#warning-confirm-modal"
+                    data-toggle="modal"
+                    class="btn btn-warning">
+              Alerta
+            </button>
+            <button type="button"
+                    data-target="#danger-confirm-modal"
+                    data-toggle="modal"
+                    class="btn btn-danger">
+              Alerta
+            </button>
             <h4>Modals</h4>
             <button type="button"
                     class="btn btn-primary"
@@ -380,7 +393,63 @@
         </div>
       </div>
       <!-- /.normal-modal -->
-    
+      
+      <!-- alternative-modal -->
+      <div class="modal fade"
+           id="warning-confirm-modal"
+           tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Confirmación</h5>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex">
+                <i class="fas fa-exclamation-triangle text-warning text-xl mr-3"></i>
+                <span>Mensaje de alerta</span>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-default"
+                      data-dismiss="modal">
+                Cancelar
+              </button>
+              <button class="btn btn-primary"
+                      data-dismiss="modal">
+                Aceptar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade"
+           id="danger-confirm-modal"
+           tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Confirmación</h5>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex">
+                <i class="fas fa-exclamation-circle text-danger text-xl mr-3"></i>
+                <span>Mensaje de alerta</span>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-default"
+                      data-dismiss="modal">
+                Cancelar
+              </button>
+              <button class="btn btn-danger"
+                      data-dismiss="modal">
+                Aceptar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.alternative-modal -->
     
     </div>
     <!-- ./wrapper -->
