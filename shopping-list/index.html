@@ -89,7 +89,7 @@
           
           <div class="container">
             
-            <div id="shopping-list-collapse">
+            <div id="total-summary-shopping-list-collapse">
               <div class="mb-3 d-flex">
                 <ul class="nav nav-pills flex-grow-1 align-content-center"
                     role="tablist">
@@ -97,9 +97,9 @@
                     <button class="nav-link btn btn-xs text-sm"
                             type="button"
                             data-toggle="collapse"
-                            data-target="#totals-shopping-list-collapse"
+                            data-target="#totals-total-summary-shopping-list-collapse"
                             aria-expanded="false"
-                            aria-controls="totals-shopping-list-collapse">
+                            aria-controls="totals-total-summary-shopping-list-collapse">
                       Totales
                       <i class="fas fa-angle-down w-25px"></i>
                     </button>
@@ -108,9 +108,9 @@
                     <button class="nav-link btn btn-xs text-sm"
                             type="button"
                             data-toggle="collapse"
-                            data-target="#summary-shopping-list-collapse"
+                            data-target="#summary-total-summary-shopping-list-collapse"
                             aria-expanded="false"
-                            aria-controls="summary-shopping-list-collapse">
+                            aria-controls="summary-total-summary-shopping-list-collapse">
                       Resumen
                       <i class="fas fa-angle-down w-25px"></i>
                     </button>
@@ -128,23 +128,23 @@
                 </div>
               </div>
               <div class="collapse"
-                   data-parent="#shopping-list-collapse"
-                   id="totals-shopping-list-collapse">
+                   data-parent="#total-summary-shopping-list-collapse"
+                   id="totals-total-summary-shopping-list-collapse">
                 <div class="card card-body">
                   <div class="row">
-                    <div class="col">
+                    <div class="col-sm-4 col-6">
                       <div class="description-block border-right">
                         <h5 class="description-header">1.234</h5>
                         <span class="description-text">Productos</span>
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-4 col-6">
                       <div class="description-block border-right">
                         <h5 class="description-header">123.456,78 €</h5>
                         <span class="description-text">Importe</span>
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-4 col-6">
                       <div class="description-block">
                         <h5 class="description-header">1.234</h5>
                         <span class="description-text">Unidades</span>
@@ -154,8 +154,8 @@
                 </div>
               </div>
               <div class="collapse"
-                   data-parent="#shopping-list-collapse"
-                   id="summary-shopping-list-collapse">
+                   data-parent="#total-summary-shopping-list-collapse"
+                   id="summary-total-summary-shopping-list-collapse">
                 <div class="card card-body">
                   <div class="progress-group">
                     Productos marcados
